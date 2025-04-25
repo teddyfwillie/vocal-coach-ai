@@ -3,7 +3,7 @@ import { Toaster } from "sonner";
 
 const AuthLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <div className="flex items-center justify-center">
+    <div className="auth-layout">
       {children} <Toaster position="top-right" duration={5000} />
     </div>
   );
