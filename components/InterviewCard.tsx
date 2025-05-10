@@ -10,6 +10,7 @@ const InterviewCard = ({
   role,
   type,
   techstack,
+  userId,
   level,
   questions,
   finalized,
@@ -67,7 +68,9 @@ const InterviewCard = ({
           <DisplayTechIcons techStack={techstack} />
           <Button className="btn-primary">
             <Link
-              href={feedback ? `/interview/${id}/feedback` : `/interview/${id}`}
+              href={
+                feedback ? `/interviews/${id}/feedback` : `/interviews/${id}`
+              }
             >
               {feedback ? "Check Feedback" : "View Interview"}
             </Link>
